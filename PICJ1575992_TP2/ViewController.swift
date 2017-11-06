@@ -48,8 +48,8 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         var celluleCourante:CVCPub
         
         celluleCourante = collectionView.dequeueReusableCell(withReuseIdentifier: "modeleCellulePub", for:indexPath) as! CVCPub
-        celluleCourante.pubNom.text = tableauDonnees[indexPath.row]["nom"]!
-        celluleCourante.pubImage.image = UIImage(named: tableauDonnees[(indexPath as NSIndexPath).row]["photo"]!)
+        celluleCourante.pubNom.text = tableauDonnees[indexPath.row][0]
+        celluleCourante.pubImage.image = UIImage(named: tableauDonnees[(indexPath as NSIndexPath).row][1])
         
         return celluleCourante
     } // cellForItemAt indexPath
