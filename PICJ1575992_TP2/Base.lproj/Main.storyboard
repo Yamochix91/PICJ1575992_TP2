@@ -80,7 +80,6 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FWv-2x-1Lv">
                                 <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="daT-1e-F5y">
                                     <size key="itemSize" width="368" height="399"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -95,22 +94,27 @@
                                             <rect key="frame" x="0.0" y="0.0" width="368" height="399"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u5W-z3-vHg">
-                                                    <rect key="frame" x="64" y="20" width="240" height="276"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ly-VC-BWT">
                                                     <rect key="frame" x="65" y="316" width="239" height="54"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="44"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.9911990761756897" green="0.99629586935043335" blue="0.99603718519210815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u5W-z3-vHg">
+                                                    <rect key="frame" x="96" y="47" width="178" height="239"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frame05.png" translatesAutoresizingMaskIntoConstraints="NO" id="9BC-rM-kjg">
+                                                    <rect key="frame" x="57" y="12" width="254" height="308"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </view>
                                         <connections>
                                             <outlet property="pubImage" destination="u5W-z3-vHg" id="ZSd-Uo-3GX"/>
                                             <outlet property="pubNom" destination="6ly-VC-BWT" id="Vwb-ee-Nkx"/>
+                                            <segue destination="Ms3-Pj-iPr" kind="presentation" id="5DZ-2r-JI1"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -128,11 +132,84 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="woo-Bf-Hgy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31.654676258992808" y="31.834532374100721"/>
+            <point key="canvasLocation" x="32" y="32"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="Edb-lm-Lb7">
+            <objects>
+                <viewController id="Ms3-Pj-iPr" customClass="VCDetails" customModule="PICJ1575992_TP2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qrc-Vg-vPZ">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="brick01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="BFp-Hw-8d6">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MEz-e6-WPg">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8Sx-Js-gkF">
+                                    <size key="itemSize" width="684" height="1003"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="LUq-aZ-sBf" customClass="CVCPub" customModule="PICJ1575992_TP2" customModuleProvider="target">
+                                        <rect key="frame" x="75" y="0.0" width="684" height="1003"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="684" height="1003"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aQo-ZX-Yzh">
+                                                    <rect key="frame" x="20" y="93" width="644" height="423"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAs-Qb-fq0">
+                                                    <rect key="frame" x="0.0" y="540" width="664" height="119"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                                    <color key="textColor" red="0.9911990761756897" green="0.99629586935043335" blue="0.99603718519210815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Retour à la gallerie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IqD-Dy-39g">
+                                                    <rect key="frame" x="44" y="33" width="269" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                    <color key="textColor" red="0.9911990761756897" green="0.99629586935043335" blue="0.99603718519210815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsb-3B-7dF">
+                                                    <rect key="frame" x="-8" y="20" width="80" height="64"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <state key="normal" title="&lt;">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="retourALaListe:" destination="Ms3-Pj-iPr" eventType="touchUpInside" id="1ef-y1-o1H"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="JQ6-aF-S2I"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="85g-x3-Akf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806.47482014388493" y="31.834532374100721"/>
         </scene>
     </scenes>
     <resources>
         <image name="brick01.jpg" width="1280" height="876"/>
+        <image name="frame05.png" width="500" height="665"/>
         <image name="pub25.png" width="520" height="685"/>
     </resources>
 </document>

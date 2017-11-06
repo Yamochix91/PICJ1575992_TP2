@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC5A30001FB0B9A100728C1F /* VCDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5A2FFF1FB0B9A100728C1F /* VCDetails.swift */; };
 		EC807A6C1FABB14B007CFD9A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECC8FD3B1FA0B651009264E2 /* Info.plist */; };
 		EC807A721FABC0FC007CFD9A /* CVCPub.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC807A711FABC0FC007CFD9A /* CVCPub.swift */; };
 		ECC8FD301FA0B651009264E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8FD2F1FA0B651009264E2 /* AppDelegate.swift */; };
@@ -75,6 +76,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC5A2FFF1FB0B9A100728C1F /* VCDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDetails.swift; sourceTree = "<group>"; };
 		EC807A711FABC0FC007CFD9A /* CVCPub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCPub.swift; sourceTree = "<group>"; };
 		ECC8FD2C1FA0B651009264E2 /* PICJ1575992_TP2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PICJ1575992_TP2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC8FD2F1FA0B651009264E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				ECC8FD381FA0B651009264E2 /* LaunchScreen.storyboard */,
 				ECC8FD3B1FA0B651009264E2 /* Info.plist */,
 				EC807A711FABC0FC007CFD9A /* CVCPub.swift */,
+				EC5A2FFF1FB0B9A100728C1F /* VCDetails.swift */,
 			);
 			path = PICJ1575992_TP2;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 			files = (
 				ECC8FD321FA0B651009264E2 /* ViewController.swift in Sources */,
 				ECC8FD301FA0B651009264E2 /* AppDelegate.swift in Sources */,
+				EC5A30001FB0B9A100728C1F /* VCDetails.swift in Sources */,
 				EC807A721FABC0FC007CFD9A /* CVCPub.swift in Sources */,
 				ECC8FDAC1FA0C513009264E2 /* Intro.swift in Sources */,
 			);
